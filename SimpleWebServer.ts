@@ -37,6 +37,19 @@ for await (const req of server) {
 // Deno is a   secure runtime
 // for javascript in typescript
 
+// In nodejs  by default
+// you dont have any permission to restrict access to underlying operating system by the node script
+
+// for your own node script that you run on your own machine its fine but when you install/download a third party package  like a linting package
+// you never know what this tool might do under
+// the hood it's written in no trace and it
+// could do anything on your computer so
+// you're relying on the maintainer of that
+// project to make sure that nothing
+// harmful enters their package and that
+// they themselves don't write any harmful
+// code in there
+
 //With Deno you control which permissions you give to your scripts when you execute them and by default there are no permissions
 //here we need network access
 //so to run the above script with proper permissions we need to add flags,
